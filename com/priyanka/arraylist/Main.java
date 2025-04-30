@@ -1,4 +1,4 @@
-package com.priyanka;
+package com.priyanka.arraylist;
 
 import java.util.*;
 
