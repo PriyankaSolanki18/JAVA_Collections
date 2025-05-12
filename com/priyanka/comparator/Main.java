@@ -14,7 +14,7 @@ class Student{
         this.gpa=gpa;
     }
 
-    //getters1
+    //getters
     public String getName() {return name;}
     public double getGpa() {return gpa;}
 }
@@ -22,6 +22,7 @@ class Student{
 class StringLengthComparator implements Comparator<String>{
 
     @Override
+    //compare method sirf 2 cheezo ko compare kerta h
     public int compare(String o1, String o2) {
         //ascending order
         //return o1.length() - o2.length();
@@ -37,8 +38,13 @@ class StringLengthComparator implements Comparator<String>{
 class MyComparator implements Comparator<Integer>{
 
     @Override
+    /*
+    compare method determine the order of the object o1 and o2, the int it is returning will tell us the relative order of o1 and o2
+    (-ve) vlaue return ker rha h mtlb o1 phele aayega o2 se
+    (0) mtl o1 == o2
+    (+ve) value mtlb o2 phele aayega o1 se
+    */
     public int compare(Integer o1, Integer o2) {
-
         //for ascending order
         //return o1 - o2;
 
@@ -53,13 +59,19 @@ public class Main {
         list.add(2);
         list.add(1);
         list.add(3);
+
+        //by default ascending order me sort kerta h sort method - 1,2,3
+        list.sort(null);
+        System.out.println("Sorting using sort : "+list);
+
         list.sort(new MyComparator());
         //list.sort((a,b) -> b - a);
-        System.out.println(list);
+        System.out.println("Sorting in desc order : using instance of MyComparator class : "+list);
 
         List<String> words = Arrays.asList("banana","apple","date");
+        //words will be sort according to their length
         words.sort(new StringLengthComparator());
-        System.out.println(words);
+        System.out.println("Sorting words according to their length using class instance : "+words);
 
         List<String> names = Arrays.asList("priyanka","agrata","malvika");
         //descending order
