@@ -90,3 +90,9 @@ LIFO Structure : Stack follows the LIFO principle, where the last element added 
 Inheritance : Stack is a subclass of Vector, which means it inherits all the features of a dynamic array but is
 constrained by stack's LIFO nature.
 
+CopyOnWriteArrayList
+-------------------------------------
+
+As we know ArrayList and LinkedList are not thread safe.
+Vector and Stack are synchronized.
+
