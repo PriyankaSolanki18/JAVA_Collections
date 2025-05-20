@@ -21,7 +21,7 @@ public class CopyOnWriteArrayListDemo {
 
         //CopyOnWriteArrayList ham tab prefer kerte h jab read operation zayada ho na ki write
 
-//        List<String> shoppingList = new ArrayList<>();
+        //List<String> shoppingList = new ArrayList<>();
         List<String> shoppingList = new CopyOnWriteArrayList<>();
         shoppingList.add("milk");
         shoppingList.add("eggs");
@@ -40,7 +40,7 @@ public class CopyOnWriteArrayListDemo {
             }
         }
         //System.out.println();
-        //purani list = new list after modification
+        //purani list = new list , after modification
         System.out.println("updated shopping list : "+shoppingList);
 
 //        List<String> sharedList = new ArrayList<>();
