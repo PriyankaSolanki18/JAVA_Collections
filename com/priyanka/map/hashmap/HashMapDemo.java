@@ -4,7 +4,8 @@ import java.util.*;
 
 public class HashMapDemo {
     public static void main(String[] args) {
-        HashMap<Integer,String> map = new HashMap<>();
+//        HashMap<Integer,String> map = new HashMap<>();
+        HashMap<Integer,String> map = new HashMap<>(17,0.5f);
         map.put(1,"Akshit");
         map.put(42,"Neha");
         map.put(31,"Priyanka");
