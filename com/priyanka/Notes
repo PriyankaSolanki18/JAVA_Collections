@@ -332,3 +332,9 @@ When an entry is accessed using get or updated using put, it is moved to the end
 
 Ye bhi thread safe nhi h
 
+
+WeakHashMap
+------------------------------------------
+
+Garbage Collection
+
