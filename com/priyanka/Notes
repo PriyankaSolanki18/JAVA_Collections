@@ -155,9 +155,9 @@ Collection Hierarchy :
 
                                             Map (Separate Interface)
                                                         |
-                      ------------------------------------------------------------------------------
-                      |                                 |                                          |
-         -------------------------                   SortedMap                              ConcurrentMap
+                      ------------------------------------------------------------------------------------------------------
+                      |                                 |                                          |                       |
+         -------------------------                   SortedMap                              ConcurrentMap                EnumMap
          |                        |                     |                                          |
       HashMap                 HashTable              TreeMap                             ConcurrentHashMap
          |                    (legacy)             NavigableMap                         ConcurrentSkipListMap
