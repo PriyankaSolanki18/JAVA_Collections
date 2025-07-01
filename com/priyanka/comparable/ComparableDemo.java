@@ -10,17 +10,17 @@ public class ComparableDemo {
         list.add(new Student("Bob",3.7));
         list.add(new Student("Alice",3.5));
         list.add(new Student("Akshit",3.9));
-        //list.sort(null); // iss case me hame nhi pata kis tarah se ye sort karega
-        //System.out.println(list);
+        list.sort(null); // iss case me hame nhi pata kis tarah se ye sort karega
+        System.out.println(list);
 
 
-        List<Integer> num = new ArrayList<>();
+        /*List<Integer> num = new ArrayList<>();
         num.add(12);
         num.add(3);
         num.add(1);
         num.add(78);
         num.sort(null);
-        System.out.println(num);
+        System.out.println(num);*/
     }
 }
 
