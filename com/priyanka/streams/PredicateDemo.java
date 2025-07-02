@@ -5,8 +5,8 @@ import java.util.function.Predicate;
 public class PredicateDemo {
     public static void main(String[] args) {
         // Predicate --> Functional interface (Boolean valued function)
-        //agar kuch check kerna ho toh Predicate use kerna
-        //ye sirf ek condition hold kerta h that's it, mtlb ham ek condition ko variable me store ker rahe h
+        // agar kuch check kerna ho toh Predicate use kerna
+        // ye sirf ek condition hold kerta h that's it, mtlb ham ek condition ko variable me store ker rahe h
         Predicate<Integer> isEven = x -> x%2 == 0;
         System.out.println(isEven.test(4));
 
