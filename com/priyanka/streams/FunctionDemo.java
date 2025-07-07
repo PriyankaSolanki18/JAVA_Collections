@@ -12,5 +12,8 @@ public class FunctionDemo {
         System.out.println(doubleIt.andThen(tripleIt).apply(20));  //same ans isme phele double hoga fir triple : 20*2=40 -> 40*3=120
         System.out.println(doubleIt.compose(tripleIt).apply(20));  //same ans isme phele triple hoga fir double : 20*3=60 -> 60*2=120
 
+        Function<Integer,Integer> identity = Function.identity();
+        Integer res = identity.apply(18);
+        System.out.println(res);
     }
 }
