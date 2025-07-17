@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class TerminalOps {
     public static void main(String[] args) {
@@ -57,6 +58,12 @@ public class TerminalOps {
         // Example : Counting occurrences of a Character
         String sentence = "Hello World";
         System.out.println(sentence.chars().filter(x -> x=='l').count());
+
+        // Example :
+        // stream cannot be reused after a terminal operation has been called
+        Stream<String> stream = names.stream();
+        stream.forEach(System.out::println);
+        List<String> list1 = stream.map(String::toUpperCase).toList(); // exception aayega
 
         // stateful & stateless operations
 
