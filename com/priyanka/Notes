@@ -338,3 +338,14 @@ WeakHashMap
 
 Garbage Collection
 
+
+Queues
+------------------------------------------
+A data structure that works on the FIFO (First in first out) principle
+
+Elements are added at the end and removed from the front
+
+
+
+
+
